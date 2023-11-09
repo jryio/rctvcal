@@ -53,8 +53,8 @@ var appendEvent = (e) => {
 var formatTime = (e) => {
   const start = new Date(e.start);
   const end = new Date(e.end);
-  const startHour = start.getHours() + 1;
-  const endHour = end.getHours() + 1;
+  const startHour = start.getHours();
+  const endHour = end.getHours();
   const startMinutes = start.getMinutes();
   const endMinutes = end.getMinutes();
   const startMinutesStr = startMinutes ? `:${startMinutes}` : "";
