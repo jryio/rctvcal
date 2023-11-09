@@ -8601,7 +8601,7 @@ details.collapse summary::-webkit-details-marker {
   display: flex;
   flex: 1;
   flex-direction: column;
-  font-size: 64px;
+  font-size: 36px;
 }
 
 .cal-event {
