@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .prose {
+    max-width: 100% !important;
+  }
+}
+
+@layer components {
+  /* Container for a day view */
+  .cal-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 64px;
+  }
+
+  .cal-event {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cal-event-time {
+    @apply py-4 px-8;
+  }
+  .cal-event-title {
+    @apply py-4;
+  }
+
+
+  /* Read line for the current time */
+  .cal-now {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    pointer-events: none;
+    background-color: #d95a88;
+    z-index: 100;
+  }
+
+  .cal-slot {
+    width: 100%;
+    height: 30px;
+    padding: 0 15px 0 0;
+    border: 1px dotted #d7dada;
+    /* border-right: 1px dotted #d7dada; */
+  }
+
+  .cal-slot-inner {
+    position: relative;
+  }
+}

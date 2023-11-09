@@ -1,0 +1,19 @@
+{
+  "name": "rctvcalendar",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "bun build --watch --outfile=index.js --target=browser index.ts"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "bun-types": "latest",
+    "daisyui": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
